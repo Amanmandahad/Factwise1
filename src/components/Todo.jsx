@@ -4,7 +4,7 @@ import "./Todo.css";
 import { IoLockOpenSharp, IoLockClosed } from "react-icons/io5";
 import { MdDelete, MdEdit } from "react-icons/md";
 import { FaCheck } from "react-icons/fa";
-
+import { BsFillPersonFill } from "react-icons/bs";
 
 const Todo = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -94,7 +94,7 @@ const Todo = () => {
                   setActiveIndex(index === activeIndex ? null : index)
                 }
               >
-                <h3>{item.title}</h3>
+                <h3> <BsFillPersonFill  /> {item.title}</h3>
                 {activeIndex === index ? (
                   <IoLockOpenSharp style={{ fontSize: "20px" }} />
                 ) : (
