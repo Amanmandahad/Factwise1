@@ -61,7 +61,7 @@ const Todo = () => {
   );
 
   const handleEditChange = (e, index, field) => {
-    const updatedData = [...data]; // Copy data array
+    const updatedData = [...data]; 
     updatedData[index][field] = e.target.value; 
     setData(updatedData); 
   };
@@ -212,6 +212,7 @@ const Todo = () => {
         )}
       </div>
     </div>
+   
   );
 };
 
