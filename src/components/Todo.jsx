@@ -77,6 +77,7 @@ const Todo = () => {
       <div className="accordian">
         {/* Search input */}
         <div className="input">
+          <h2>List view </h2>
           <input
             type="text"
             placeholder="Search user"
@@ -200,11 +201,11 @@ const Todo = () => {
           <div className="modal">
             <div className="modal-content">
               <h2>Are you sure you want to delete?</h2>
-              <button onClick={deleteItem} className="confirm-button">
-                Yes
+              <button onClick={deleteItem} style={{backgroundColor:'orange'}} className="confirm-button">
+                Delete
               </button>
               <button onClick={closeModal} className="cancel-button">
-                No
+                cancel
               </button>
             </div>
           </div>
