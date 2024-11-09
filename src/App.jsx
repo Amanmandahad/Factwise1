@@ -3,7 +3,8 @@ import React from 'react'
 const App = () => {
   return (
     <div>
-      hello world
+      it is practise project for redux toolkit
+      
     </div>
   )
 }
